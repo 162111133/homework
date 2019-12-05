@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="referrer" content="always" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<title>Circle-手机客户端</title>
+		<meta name="keywords" content="OSCHINA客户端,OSChina,程序员社区APP,软件论坛APP,移动端技术资讯,csdn博客APP,Android,iPhone,移动社交软件" />
+		<meta name="description" content="OSCHINA 社区，程序员专属的技术分享社交平台" />
+		<link rel="stylesheet" type="text/css" href="https://static.oschina.net/new-osc/js/utils/semantic-ui/semantic.min.css?t=1542621653000" />
+		<link type="text/css" rel="stylesheet" href="https://static.oschina.net/new-osc/dist/css/layout-simple-common.6c858b4a.css">
+		<script type="text/javascript">
+			window.__STATIC_DOMAIN = "https://static.oschina.net";
+		</script>
+		<script src="https://static.oschina.net/new-osc/js/utils/jquery.min.js"></script>
+		<link type="text/css" rel="stylesheet" href="https://static.oschina.net/new-osc/dist/css/page-app-download.58613df8.css">
+		<link rel="icon" href="img/circle.ico" type="image/x-icon" />
+		<link rel="alternate" type="application/rss+xml" title="最新开源项目" href="https://www.oschina.net/project/rss" />
+		<link rel="alternate" type="application/rss+xml" title="最新开源资讯" href="https://www.oschina.net/news/rss" />
+		<link rel="alternate" type="application/rss+xml" title="最新问题列表" href="https://www.oschina.net/question/rss" />
+		<link rel="alternate" type="application/rss+xml" title="最新翻译列表" href="https://www.oschina.net/translate/rss" />
+		<link rel="alternate" type="application/rss+xml" title="最新博客列表" href="https://www.oschina.net/blog/rss" />
+		<link rel="alternate" type="application/rss+xml" title="推荐博客列表" href="https://www.oschina.net/blog/rss?show=more" />
+		<link rel="alternate" type="application/rss+xml" title="推荐软件列表" href="https://www.oschina.net/project/rss?show=recomms" />
+		<link rel="alternate" type="application/rss+xml" title="最新代码分享列表" href="https://www.oschina.net/code/rss" />
+		<link rel="alternate" type="application/rss+xml" title="OSCHINA - 源码列表" href="https://www.oschina.net/code/source_rss" />
+	</head>
+	<body>
+		<val data-name="space_user_url" data-value=""></val>
+		<val data-name="g_user_url" data-value="https://my.oschina.net/u/4299691"></val>
+		<val data-name="api_prefix" data-value=""></val>
+		<val data-name="g_user_code" data-value="IBTHgfttXXgWdfjJEws5864pKaG78QsRGY7wcM2E"></val>
+		<val data-name="g_user_id" data-value="4299691"></val>
+		<val data-name="g_user" data-value="net.oschina.core.beans.User@12ceacb5"></val>
+		<val data-name="login_page" data-value="https://www.oschina.net/home/login?goto_page=https%3A%2F%2Fwww.oschina.net%2Fapp"></val>
+		<val data-name="g_unread_msg_total_count" data-value="-3"></val>
+		<val data-name="g_unread_msg_fans_count" data-value="-1"></val>
+		<val data-name="g_unread_msg_fans_tpl" data-value="<a class='item message-item' href='https://my.oschina.net/u/4299691/followers'>{{fansCount}} 位新粉丝</a>"></val>
+		<val data-name="g_unread_msg_private_count" data-value="0"></val>
+		<val data-name="g_unread_msg_private_tpl" data-value="<a class='item message-item' href='https://my.oschina.net/u/4299691/admin/inbox'>{{privateMsgCount}} 条新私信</a>"></val>
+		<val data-name="g_unread_msg_reply_count" data-value="-1"></val>
+		<val data-name="g_unread_msg_reply_tpl" data-value="<a class='item message-item' href='https://my.oschina.net/u/4299691?tab=activity&scope=reply'>{{repliesCount}} 条新评论</a>"></val>
+		<val data-name="g_unread_msg_ref_count" data-value="-1"></val>
+		<val data-name="g_unread_msg_ref_tpl" data-value="<a class='item message-item' href='https://my.oschina.net/u/4299691?tab=activity&scope=atme'>{{refMeCount}} 条提到我</a>"></val>
+
+		<val data-name="weixinAppId" data-value="wx880def15e694b905"></val>
+		<val data-name="weixinTimestamp" data-value="1575253864376"></val>
+		<val data-name="weixinNonceStr" data-value="cf2a92d6-d89c-4886-8898-3ff835aba502"></val>
+		<val data-name="weixinSignature" data-value="06f95e61a11f19eaa7216d1d90bc158badc3e8ad"></val>
+		<val data-name="weixinShareUrl" data-value="https://www.oschina.net/app"></val>
+		<val data-name="is_detail_page" data-value="false"></val>
+
+		<div class="pusher">
+			<div class="simple-container">
+
+
+
+
+
+
+
+				<val data-name="weixinShareTitle" data-value="OSCHINA 手机客户端"></val>
+				<val data-name="weixinShareDescription" data-value="OSCHINA 社区，程序员专属的技术分享社交平台"></val>
+				<val data-name="weixinShareImgUrl" data-value=""></val>
+				<x-foo-define data-define="web-app-download"></x-foo-define>
+				<div class="swiper-container pages-container">
+					<div class="web-app-download-container">
+						<section class="side side-main" data-slide="index">
+							<div class="nav-header wrapper">
+								<div class="logo-wrap">
+									<a href="exam.html" class="logo-link"><span class="osc-logo"></span></a>
+								</div>
+							</div>
+
+							<div class="main-body wrapper">
+								<div class="app-wrap">
+									<div class="app-icon"></div>
+									<h1 class="title">Circle APP</h1>
+									<p class="desc">用开源的方式看世界</p>
+									<div class="download-btns">
+										<div class="btn-wrap">
+											<a class="btn download-ios" href="#"></a>
+											<div class="extra">
+												<a href="#">开源源码</a>
+											</div>
+										</div>
+										<div class="btn-wrap">
+											<a class="btn download-android" href="#"></a>
+											<div class="extra">
+												<a href="#">开源源码</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="download-qrcode">
+									<div class="qrcode-pic"></div>
+									<div class="extra">
+										<span>扫描二维码下载</span>
+									</div>
+								</div>
+								<div class="app-pic">
+									<div class="app-banner-wrap">
+										<!-- 水平轮播图容器 -->
+										<div class="section-swiper-wrap">
+											<div class="section-swiper-container">
+												<div class="swiper-wrapper banners-wrap">
+													<div class="swiper-slide">
+														<div class="banner banner-1"></div>
+													</div>
+													<div class="swiper-slide">
+														<div class="banner banner-2"></div>
+													</div>
+													<div class="swiper-slide">
+														<div class="banner banner-3"></div>
+													</div>
+												</div>
+												<div class="swiper-pagination"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="arrow-box-wrap">
+								<div class="arrow-box">
+									<div class="arrow"></div>
+								</div>
+							</div>
+						</section>
+
+						<section class="side side-intro-article-recommend" data-slide="articleRecommend">
+							<div class="content-body wrapper">
+								<div class="picture-container">
+									<div class="phone-container">
+										<div class="screen-container">
+											<div class="screen-inner">
+												<!-- 水平轮播图容器 -->
+												<div class="section-swiper-wrap">
+													<div class="section-swiper-container">
+														<div class="swiper-wrapper screens-wrap">
+															<div class="swiper-slide">
+																<div class="screen screen-1"></div>
+															</div>
+															<div class="swiper-slide">
+																<div class="screen screen-2"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="phone-cover"></div>
+										<div class="popup-wrap">
+											<div class="popup batch-a popup-project" data-x="-122" data-y="-48"></div>
+											<div class="popup batch-b popup-zb" data-x="189" data-y="-154"></div>
+											<div class="popup batch-a popup-gitee" data-x="-156" data-y="96"></div>
+											<div class="popup batch-b popup-question" data-x="217" data-y="50"></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="text-container">
+									<h3 class="title">资讯智能推荐</h3>
+									<div class="desc mb-hide">
+										<p>海量优质技术文章，只推荐你感兴趣的</p>
+										<p>选择自己想要的标签，你的标签你来定</p>
+									</div>
+									<div class="desc mb-show">
+										<p>海量优质技术文章</p>
+										<p>只推荐你感兴趣的</p>
+										<p>选择自己想要的标签</p>
+										<p>你的标签你来定</p>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="side side-intro-developers" data-slide="developers">
+							<div class="content-body wrapper">
+								<div class="text-container">
+									<h3 class="title">300万+ 开发者聚集于此</h3>
+									<div class="desc mb-hide">
+										<p>你的想法与见解，会在这里得到认同肯定</p>
+										<p>你的疑惑与难题，也将在这里得到解答</p>
+									</div>
+									<div class="desc mb-show">
+										<p>你的想法与见解</p>
+										<p>会在这里得到认同肯定</p>
+										<p>你的疑惑与难题</p>
+										<p>也将在这里得到解答</p>
+									</div>
+								</div>
+
+								<div class="picture-container">
+									<div class="tab-wrap">
+										<div class="tab-item active" data-index="0">热门动弹</div>
+										<div class="tab-item" data-index="1">热门话题</div>
+										<div class="tab-item" data-index="2">问答</div>
+									</div>
+									<div class="phone-container">
+										<div class="screen-container">
+											<div class="screen-inner">
+												<!-- 水平轮播图容器 -->
+												<div class="section-swiper-wrap">
+													<div class="section-swiper-container">
+														<div class="swiper-wrapper screens-wrap">
+															<div class="swiper-slide">
+																<div class="screen screen-1"></div>
+															</div>
+															<div class="swiper-slide">
+																<div class="screen screen-2"></div>
+															</div>
+															<div class="swiper-slide">
+																<div class="screen screen-3"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="phone-cover"></div>
+										<div class="popup-wrap">
+											<div class="popup popup-1" data-x="0" data-y="118"></div>
+											<div class="popup popup-2" data-x="0" data-y="80"></div>
+											<div class="popup popup-3" data-x="0" data-y="141"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="side side-intro-projects" data-slide="projects" data-reveal-distance="0.85">
+							<div class="content-body wrapper">
+								<div class="text-container">
+									<h3 class="title">汇集全网 4万+ 开源软件</h3>
+									<div class="desc mb-hide">
+										<p>全网开源软件，你要找的这儿都有</p>
+										<p>开源软件、代码片段随时搜索查看</p>
+									</div>
+									<div class="desc mb-show">
+										<p>全网开源软件</p>
+										<p>你要找的这儿都有</p>
+										<p>开源软件、代码片段随时搜索查看</p>
+									</div>
+								</div>
+
+								<div class="picture-container">
+									<div class="projects-container">
+										<div class="projects-logo-wrap">
+											<div class="item batch-a item-ruby" data-x="-210" data-y="-206"></div>
+											<div class="item batch-c item-wxapp" data-x="-93" data-y="-206"></div>
+											<div class="item batch-a item-code" data-x="3" data-y="-230"></div>
+											<div class="item batch-b item-python" data-x="98" data-y="-200"></div>
+											<div class="item batch-c item-php" data-x="195" data-y="-204"></div>
+											<div class="item batch-a item-kotlin" data-x="-160" data-y="-124"></div>
+											<div class="item batch-b item-pre" data-x="-36" data-y="-144"></div>
+											<div class="item batch-c item-c" data-x="45" data-y="-142"></div>
+											<div class="item batch-b item-sdk" data-x="144" data-y="-134"></div>
+											<div class="item batch-c item-tools" data-x="-87" data-y="-95"></div>
+											<div class="item batch-a item-java" data-x="64" data-y="-79"></div>
+											<div class="item batch-b item-swift" data-x="-25" data-y="-62"></div>
+										</div>
+										<div class="projects-shadow-wrap">
+											<div class="item item-1"></div>
+											<div class="item item-2"></div>
+											<div class="item item-3"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="side side-intro-blog" data-slide="blog">
+							<div class="swiper-container swiper-container-scrollbar">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="content-body wrapper">
+											<div class="picture-container">
+												<div class="phone-container">
+													<div class="screen-container">
+														<div class="screen-inner">
+															<!-- 水平轮播图容器 -->
+															<div class="section-swiper-wrap">
+																<div class="section-swiper-container">
+																	<div class="swiper-wrapper screens-wrap">
+																		<div class="swiper-slide">
+																			<div class="screen screen-1"></div>
+																			<div class="daily-blog-slide"></div>
+																		</div>
+																		<div class="swiper-slide">
+																			<div class="screen screen-2"></div>
+																			<div class="follow-btn-wrap">
+																				<div class="unfollow-btn"></div>
+																				<div class="follow-btn"></div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="phone-cover"></div>
+												</div>
+											</div>
+
+											<div class="text-container">
+												<h3 class="title">开源技术博客</h3>
+												<div class="desc mb-hide">
+													<p>在分享与记录中，过滤与积累知识</p>
+													<p>在沟通与交流中，得到关注与认同</p>
+												</div>
+												<div class="desc mb-show">
+													<p>在分享与记录中</p>
+													<p>过滤与积累知识</p>
+													<p>在沟通与交流中</p>
+													<p>得到关注与认同</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="app-wrap">
+											<div class="app-icon"></div>
+											<h1 class="title">Circle APP</h1>
+											<p class="desc">用开源的方式看世界</p>
+											<div class="download-btns">
+												<div class="btn-wrap">
+													<a class="btn download-ios" href="http://a.app.qq.com/o/simple.jsp?pkgname=net.oschina.app" target="_blank"></a>
+													<div class="extra">
+														<a href="http://a.app.qq.com/o/simple.jsp?pkgname=net.oschina.app" target="_blank">IPA下载</a>
+														<a href="https://gitee.com/oschina/iphone-app" target="_blank">开源源码</a>
+													</div>
+												</div>
+												<div class="btn-wrap">
+													<a class="btn download-android" href="http://a.app.qq.com/o/simple.jsp?pkgname=net.oschina.app" target="_blank"></a>
+													<div class="extra">
+														<a href="http://a.app.qq.com/o/simple.jsp?pkgname=net.oschina.app" target="_blank">APK下载</a>
+														<a href="https://gitee.com/oschina/android-app" target="_blank">开源源码</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<section class="side side-intro-download mb-hide" data-slide="download">
+							<div class="content-body wrapper">
+								<div class="qrcode-wrap">
+									<h3 class="title">扫码下载 Circle APP</h3>
+									<div class="qrcode-pic"></div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+
+			<div id="footer" class="ui vertical footer segment mb-hide">
+				<div class="ui container">
+					<div class="ui grid">
+						<div class="eight wide mobile four wide tablet four wide computer column">
+							<h4 class="ui header">Circle 社区</h4>
+							<div class="ui link list">
+								<a class="item" href="https://www.oschina.net/home/aboutosc" target="_blank">关于我们</a>
+								<a class="item" href="https://www.oschina.net/home/aboutosc" target="_blank">联系我们</a>
+								<a class="item" href="https://www.oschina.net/home/aboutosc#partners#" target="_blank">合作伙伴</a>
+								<a class="item" href="https://www.oschina.net/openapi" target="_blank">Open API</a>
+							</div>
+						</div>
+						<div class="eight wide mobile four wide tablet four wide computer column">
+							<h4 class="ui header">在线工具</h4>
+							<div class="ui link list">
+								<a class="item" href="https://gitee.com/?from=osc-bottom" target="_blank">码云 Gitee.com</a>
+								<a class="item" href="https://gitee.com/enterprises?from=osc-bottom" target="_blank">企业研发管理</a>
+								<a class="item" href="https://copycat.gitee.com/?from=osc-bottom" target="_blank">CopyCat-代码克隆检测</a>
+								<a class="item" href="https://tool.oschina.net" target="_blank">实用在线工具</a>
+							</div>
+						</div>
+						<div class="center aligned eight wide mobile two wide tablet two wide computer column">
+							<h4 class="ui header">微信公众号</h4>
+							<img src="https://static.oschina.net/new-osc/img/wechat_qrcode.jpg?t=1484694603000" alt="微信公众号" />
+						</div>
+						<div class="center aligned eight wide mobile six wide tablet six wide computer column">
+							<h3 class="ui header">Circle APP</h3>
+							<p>聚合全网技术文章，根据你的阅读喜好进行个性推荐</p>
+							<a href="https://www.oschina.net/app" target="_blank" class="ui large primary button">下载 APP</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="copyright">
+				<div class="ui container">
+					<div class="ui clearing basic segment">
+						<div class="ui left floated horizontal link list">
+							<<div class="item">关于我们
+						</div>
+						<div class="item mb-hide">联系我们</div>
+						<a class="item mb-hide" href="http://www.copu.org.cn/" target="_blank" title="开源软件推进联盟">在线工具</a>
+						<div class="item mb-hide">合作伙伴</div>
+					</div>
+					<div class="ui right floated horizontal link list">
+						<div class="item mb-hide">COPYRIGHT&nbsp;&copy;&nbsp;2019 -
+							2021&nbsp;南工院&nbsp;移动1811&nbsp;林磊蕊&nbsp;&nbsp;&nbsp;&nbsp;版权所有</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<script src="https://static.oschina.net/new-osc/js/utils/semantic-ui/semantic.min.js?t=1535098170000"></script>
+		<script src="https://static.oschina.net/new-osc/js/utils/jweixin-1.2.0.js"></script>
+		<script type="text/javascript" src="https://static.oschina.net/new-osc/dist/js/layout-simple-common.b4f97810.js"></script>
+		<script>
+			(function() {
+				var bp = document.createElement('script');
+				var curProtocol = window.location.protocol.split(':')[0];
+				if (curProtocol === 'https') {
+					bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+				} else {
+					bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+				}
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(bp, s);
+			})();
+		</script>
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "https://hm.baidu.com/hm.js?a411c4d1664dd70048ee98afe7b28f0b";
+				var s = document.getElementsByTagName("script")[0];
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+
+
+		<script type="text/javascript" src="https://static.oschina.net/new-osc/dist/js/page-app-download.6b6c739f.js"></script>
+	</body>
+</html>

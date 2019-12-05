@@ -1,0 +1,123 @@
+/*重置样式*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 导航栏 */
+#header_container{
+	
+	top: 0;
+	width: 100%;
+	height: 40px;
+	background: #4B505D;
+	}
+#header_container ul li{
+	font-size: 15px;
+	color: #E3E3E3;
+	display: inline-block;
+	width: auto;
+	padding: 8px 12px;
+}
+#header_container ul li:hover{
+	color: white;
+}
+#top{
+	background: #F5F5F5;
+	    width:100%;
+	    height: 100px;
+	    margin: 0 auto;
+}
+#top .logo {
+    width: 249px;
+    height: 31px;
+    float: left;
+    margin: 20px 0 30px 400px;
+}
+#top .logotext{
+	position: absolute;
+	margin: 30px 0px 600px 500px;
+	/* text-align: center; */
+    font-size: 25px;
+}
+#toptext{
+	width:998px;
+	margin:0 auto;
+	min-width:998px;
+	font-size:14px;
+	margin-top:35px;
+	text-align:left;
+	}
+#introduce_contact{
+		height:510px;
+		}
+#introduce{
+	width:52%;float:left;
+	}
+#introduce p{
+	line-height:25px;
+	}
+	#contact{
+		width:39%;
+		float:right;
+		background-color:#F9F5EA;
+		padding:0px 30px;
+		}
+	#contact .title{
+		background:url(../img/callme.png) no-repeat;
+		display:block;
+		height:32px;
+		padding-left:50px;
+		line-height:30px;
+		font-weight:bold;
+		margin:20px 0px 20px 0px;
+		font-size:20px;
+		}
+	#contact p{line-height:20px;height:20px;margin-top:5px;}
+	#contact p strong{font-size:16px;}
+	#contact p.second{margin-left:48px;height:20px;margin-top:0px;}
+	#contact .left{
+		float:left;width:70%;
+		}
+	#contact .right{
+		float:right;width:25%;text-align:center;padding: 30px 0px;
+		}
+	#contact .right img{
+		width:90px;margin-top:35px;
+		}
+#footer {
+			margin-top: 300px;
+		    width: 999px;
+		    
+		}
+#footer .section2 {
+    /*width: 999px;*/
+	width: auto;
+	background: #444444;
+    height: 81px;
+    padding: 0 20px;
+}
+#footer .section2 .view1 {
+    width: 290px;
+    height: 57px;
+    float: left;
+    padding-top: 25px;
+}
+#footer .section2 .view1 a {
+    font-size: 12px;
+    color: #888888;
+    text-decoration: none;
+}
+#footer .section2 .view1 span {
+    font-size: 12px;
+    color: #888888;
+    margin: 0 5px;
+}
+#footer .section2 .view2 {
+    width: 620px;
+    height: 56px;
+    float: right;
+    padding-top: 26px;
+    font-size: 10px;
+    color: #888888;
+    text-align: right;
+}
