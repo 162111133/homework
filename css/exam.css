@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 /* 导航栏 */
 #header_container{
 	position: fixed;
@@ -13,6 +14,7 @@
 	background: #4B505D;
 	}
 #header_container ul li{
+	
 	font-size: 15px;
 	color: #E3E3E3;
 	display: inline-block;
