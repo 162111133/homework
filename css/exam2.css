@@ -21,6 +21,13 @@
 #header_container ul li:hover{
 	color: white;
 }
+#header_container a{
+	color:#E5E5E5;
+	text-decoration: none;
+}
+#header_container a:hover{
+	color:#FFFFFF;
+}
 #top{
 	background: #F5F5F5;
 	    width:100%;
@@ -106,6 +113,9 @@
     font-size: 12px;
     color: #888888;
     text-decoration: none;
+}
+#footer .section2 .view1 a:hover{
+	color: #FFFFFF;
 }
 #footer .section2 .view1 span {
     font-size: 12px;

@@ -1,0 +1,334 @@
+/*重置样式*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+h3 {
+	margin: 0 auto;
+	font-size: 1.9375rem;
+	margin-bottom: .5rem;
+}
+
+body,
+html {
+	color: #48576a;
+}
+
+/* 导航栏 */
+#header_container {
+	z-index: 999;
+	top: 0;
+	width: 100%;
+	height: 40px;
+	background: #4B505D;
+}
+
+#header_container ul li {
+
+	font-size: 15px;
+	color: #E3E3E3;
+	display: inline-block;
+	width: auto;
+	padding: 8px 12px;
+}
+
+#header_container ul li:hover {
+	color: white;
+}
+
+#header_container a {
+	color: #E5E5E5;
+	text-decoration: none;
+}
+
+#header_container a:hover {
+	color: #FFFFFF;
+}
+
+#body_top {
+	text-align: center;
+	padding: 90px;
+	background: url(https://zb.oschina.net/static/images/services/excellent_dev/banner-large.jpg);
+}
+
+.top_1 {
+	box-sizing: border-box;
+	margin: 0 auto;
+	border: none;
+}
+
+.top_1_text {
+	text-align: left;
+}
+
+.main_header {
+	color: #FEFEFE;
+	font-size: 2.3rem;
+	font-weight: 700;
+	margin: 0;
+}
+
+.banner_subheader {
+	color: #FEFEFE;
+	font-size: 1.3125rem;
+	font-weight: 200;
+	margin: 2rem 0rem;
+}
+
+.top_a {
+	padding: 9px 15px;
+	display: inline-block;
+	background: #fd9126;
+	border-radius: 50px !important;
+	font-size: 15px !important;
+}
+
+.top_a {
+	color: #FFFFFF;
+}
+
+.page_content {
+
+	margin: 4rem 0;
+	position: relative;
+	display: block;
+}
+
+#middle {
+	margin: 0 auto;
+}
+
+#income_analysis {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#text_center {
+	margin: 0 auto;
+}
+
+.blocks_title {
+	margin: 0 auto;
+	color: #44535e;
+	font-weight: 200;
+	font-size: 2rem;
+}
+
+.blocks_sub_title {
+	color: #858a8e;
+	margin-bottom: 1.5rem;
+	margin-top: 1.5rem;
+	font-size: 1.25rem;
+}
+
+[class*=el-col-] {
+	box-sizing: border-box;
+	float: left;
+}
+
+.margin-vertical-2 {
+	margin-top: 2rem !important;
+	margin-bottom: 2rem !important;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.number {
+	color: #646b72;
+	font-weight: 700;
+}
+
+.title {
+	font-weight: 200;
+	color: #646b72;
+	font-size: 15px;
+}
+
+.el-row {
+	box-sizing: border-box;
+}
+
+.el-col-md-24 {
+	width: 100%;
+}
+
+.el-col-24 {
+	width: 100%;
+}
+
+.el-col-lg-8 {
+	width: 25%;
+}
+
+.margin-vertical-3 {
+	margin: 0 auto;
+	margin-top: 3rem !important;
+	margin-bottom: 3rem !important;
+}
+
+@media screen and (min-width: 1200px) {
+	.el-col-lg-6 {
+		width: 25%;
+	}
+}
+
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+hr.dotted {
+	color: #646b72;
+	border-style: dashed;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	max-width: 100%;
+}
+
+.blocks-title {
+	color: #44535e;
+	font-size: 1.75rem;
+	font-weight: 300;
+}
+
+.excellent-dev-guarantee {
+	margin-top: 5rem;
+	margin-bottom: 4rem;
+}
+
+@media only screen and (min-width: 768px) {
+	.el-col-sm-12 {
+		width: 50%;
+	}
+}
+
+.excellent-dev-guarantee img {
+	width: 400px;
+}
+
+.padding-top-2 {
+	pad
+}
+
+.line-35 {
+	margin-top: 50px;
+	font-size: 1.15rem;
+	font-weight: 200;
+	line-height: 35px;
+}
+
+.medium-text-right {
+	text-align: right;
+}
+
+.blocks-sub-title {
+	color: #858a8e;
+	margin-bottom: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+.vertical-feature-block {
+	position: relative;
+	text-align: center;
+	color: #44535e;
+}
+
+.el-col-sm-6 {
+	margin: 0 auto;
+	width: 25%;
+}
+
+.vertical-feature-block img {
+	display: block;
+	margin: 1rem auto 0;
+	padding: 1.25rem;
+	width: 60%;
+}
+
+.flow-block-title {
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	background: #CCCCCC;
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: #FFFFFF;
+	margin: 0 auto;
+}
+
+.padding-vertical-3 {
+	padding-top: 3rem !important;
+	padding-bottom: 3rem !important;
+}
+
+.margin-vertical-1 {
+	margin-top: 1rem !important;
+	margin-bottom: 1rem !important;
+}
+
+.top_a_1{
+	color: #FFFFFF;
+	width: 224px;
+	margin-top: 100px;
+	padding: 9px 15px;
+	display: inline-block;
+	background:rgba(0, 102, 255, 1);
+	border-radius: 50px !important;
+	font-size: 15px !important;
+}
+/* 底部 */
+#footer {
+	
+	width: 100%
+}
+
+#footer .section2 {
+	margin-top: 50px;
+	width: auto;
+	background: #444444;
+	height: 50px;
+	padding: 0 20px;
+}
+
+#footer .section2 .view1 {
+	width: 290px;
+	height: 20px;
+	float: left;
+	margin-left: 50px;
+	padding-top: 13px;
+}
+
+#footer .section2 .view1 a {
+	font-size: 12px;
+	color: #888888;
+	text-decoration: none;
+}
+
+#footer .section2 .view1 a:hover {
+	color: #FFFFF;
+}
+
+#footer .section2 .view1 span {
+	font-size: 12px;
+	color: #888888;
+	margin: 0 5px;
+}
+
+#footer .section2 .view2 {
+	width: 620px;
+	height: 20px;
+	float: right;
+	padding-top: 20px;
+	font-size: 10px;
+	color: #888888;
+	text-align: right;
+}

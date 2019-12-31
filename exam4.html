@@ -10,39 +10,39 @@
 	<body>
 		<div id="header_container">
 			<ul>
-				<a href="exam.html">
-					<li>首页</li>
-				</a>
-				<a href="exam3.html">
-					<li>开源软件</li>
-				</a>
-				<a href="exam.html">
-					<li>问答</li>
-				</a>
-				<a href="exam.html">
-					<li>动弹</li>
-				</a>
-				<a href="exam.html">
-					<li>博客</li>
-				</a>
-				<a href="exam.html">
-					<li>翻译</li>
-				</a>
-				<a href="exam.html">
-					<li>资讯</li>
-				</a>
-				<a href="exam.html">
-					<li>码云</li>
-				</a>
-				<a href="exam.html">
-					<li>众包</li>
-				</a>
-				<a href="exam.html">
-					<li>活动</li>
-				</a>
-				<a href="exam.html">
-					<li>更多</li>
-				</a>
+				<li><a href="exam.html">
+						首页
+					</a></li>
+				<li><a href="exam3.html">
+						开源软件
+					</a></li>
+				<li><a href="exam.html">
+						问答
+					</a></li>
+				<li><a href="exam.html">
+						动弹
+					</a></li>
+				<li><a href="exam.html">
+						博客
+					</a></li>
+				<li><a href="exam.html">
+						翻译
+					</a></li>
+				<li><a href="exam.html">
+						资讯
+					</a></li>
+				<li><a href="https://gitee.com/?from=osc-index" target="_blank">
+						码云
+					</a></li>
+				<li><a href="exam6.html">
+						众包
+					</a></li>
+				<li><a href="exam8.html">
+						活动
+					</a></li>
+				<li><a href="exam.html">
+						更多
+					</a></li>
 			</ul>
 		</div>
 
@@ -52,9 +52,9 @@
 			</div>
 			<div class="top-exam3">
 				<div class="bigmenu">
-					<a href="#">软件首页</a>
+					<a href="exam3.html">软件首页</a>
 					<a href="#">软件分类</a>
-					<a href="#">国产开源</a>
+					<a href="exam4.html">国产开源</a>
 					<a href="#">开源公司</a>
 					<a href="#">软件资讯</a>
 				</div>
@@ -66,7 +66,7 @@
 			<div>
 				<div class="panel-header">
 					<div class="tabs">
-						<span class="tab active" nn="0">本周热门</span>
+						<span class="selected" nn="0">本周热门</span>
 						<span class="tab" nn="1">年度热门</span>
 					</div>
 				</div>
@@ -507,13 +507,27 @@
 				$(function() {
 					$(".tabs span").click("mouseenter", function() {
 						$(this).css("cursor", "pointer");
-						$(".tabs span").removeClass("tab active");
-						$(this).addClass("tab active");
+						$(".tabs span").removeClass("selected");
+						$(this).addClass("selected");
 						var nn = parseInt($(this).attr('nn'));
 						$(".panel-text").children().addClass('hide');
 						$(".panel-text").children().eq(nn).removeClass('hide');
 					});
 				});
 			</script>
+			<div id="footer">
+				<div class="section2">
+					<div class="view1">
+						<a href="#">关于我们</a><span>|</span>
+						<a href="#">联系我们</a><span>|</span>
+						<a href="#">在线工具</a><span>|</span>
+						<a href="#">合作伙伴</a>
+					</div>
+					<div class="view2">
+						COPYRIGHT&nbsp;&copy;&nbsp;2019 - 2021&nbsp;南工院&nbsp;移动1811&nbsp;林磊蕊&nbsp;&nbsp;&nbsp;&nbsp;版权所有
+
+					</div>
+				</div>
+			</div>
 	</body>
 </html>

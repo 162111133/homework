@@ -3,8 +3,317 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="icon" href="img/circle.ico" type="image/x-icon" />
-		<title>Circle公司介绍</title>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<title>Circle-线下活动</title>
+		<style>
+			#flash{width:1139px;height: 268px;margin: 0 auto;position: relative;padding-top:;}
+		#flash #play{width:1139px;height: 268px;list-style: none;position:absolute;top:0px;left:0px;}
+		#flash #play li{display: none;position:absolute;top:0px;left:0px;}
+		#flash #play li img{float: left;
+		width: 1139px;height:268px;}
+		#button{position: absolute;bottom:10px;left:1050px;list-style: none;}
+		#button li{margin-left: 10px;float: left;}
+		#button li div{width:12px;height: 12px;background:#DDDDDD;border-radius: 6px;cursor: pointer;}
+		</style>
+		<script type="text/javascript" src="js/script.js"></script>
+		<link rel="stylesheet" href="css/exam8.css" />
 	</head>
 	<body>
+		<div id="header_container">
+			<ul>
+				<li><a href="exam.html">
+						首页
+					</a></li>
+				<li><a href="exam3.html">
+						开源软件
+					</a></li>
+				<li><a href="exam.html">
+						问答
+					</a></li>
+				<li><a href="exam.html">
+						动弹
+					</a></li>
+				<li><a href="exam.html">
+						博客
+					</a></li>
+				<li><a href="exam.html">
+						翻译
+					</a></li>
+				<li><a href="exam.html">
+						资讯
+					</a></li>
+				<li><a href="exam.html">
+						码云
+					</a></li>
+				<li><a href="exam.html">
+						众包
+					</a></li>
+				<li><a href="exam.html">
+						活动
+					</a>
+				<li><a href="exam.html">
+						更多
+					</a></li>
+			</ul>
+		</div>
+		<section class="p-event">
+			<header id="top">
+				<div class="top_title">
+					<h1 class="title_1">开源活动</h1>
+				</div>
+				<a href="#">
+					<div class="top_title3">
+						<h4 style="color: #FFFFFF;">+ 创建活动</h4>
+					</div>
+				</a>
+				<a href="#">
+					<div class="top_title2">
+						<h3>我的活动<h3>
+					</div>
+				</a>
+			</header>
+			<article class="sc-container main-container" style="max-width: 1200px; width: 100%;margin: 0 auto;">
+				<header id="v-compSlider" class="pe-banner">
+					<div id="flash">
+						<div id="prev"></div>
+						<div id="next"></div>
+						<ul id="play">
+							<a target="_blank" href="https://www.huaweicloud.com/HDC.Cloud.html">
+								<li style="display: block;"><img src="https://static.oschina.net/uploads/img/201911/25010633_ImHn.jpg" alt="" /></li>
+							</a>
+							<a target="_blank" href="https://aqa.alibaba-inc.com/#/TICA2019">
+								<li><img src="https://static.oschina.net/uploads/img/201910/30152951_RTMQ.jpg" alt="" /></li>
+							</a>
+						</ul>
+						<ul id="button">
+							<li>
+								<div style="background: #43BF83;"></div>
+							</li>
+							<li>
+								<div></div>
+							</li>
+
+						</ul>
+					</div>
+				</header>
+				<section class="box main-content">
+					<div class="box-aw" id="home_content">
+						<header class="box toolbox" id="v-toolbox">
+							<div class="panel-header">
+								<ul class="box box-aw hor-tabs tabs">
+									<li class="tab selected" nn="0">强力推荐</li>
+									<li class="tab" nn="1">最新活动</li>
+								</ul>
+							</div>
+						</header>
+						<section class="lee-container events-wrapper" id="v-content">
+							<div class="panel-text" style="float: left;">
+								<div class="box1">
+									<div class="lee-item event-item">
+										<header class="item-banner">
+											<a href="https://www.oschina.net/event/2308312">
+												<img src="https://static.oschina.net/uploads/cover/3799215_cRZPN_bi.jpg" />
+											</a>
+										</header>
+										<section>
+											<a class="summary" href="https://www.oschina.net/event/2313175">华为开发者大会2020（Cloud）</a>
+											<div class="box opt-wrapper">
+												<div class="box vertical box-aw sponsor">
+													<img src="https://oscimg.oschina.net/oscnet/up-4x4nfugf22mauznvgjiycsfekebc4xjl!/both/50x50?t=1537714989000" />
+													<span>举个栗子OSC</span>
+												</div>
+												<div class="box-fr opt-btn ">立即报名</div>
+											</div>
+										</section>
+										<footer class="box vertical when-where">
+											<label>2020.02.12</label>
+											<label>广东深圳</label>
+										</footer>
+									</div>
+									
+									<div class="lee-item event-item">
+										<header class="item-banner">
+											<a href="https://www.oschina.net/event/2308312">
+												<img src="https://static.oschina.net/uploads/cover/4054879_wtgfH_bi.jpg" />
+											</a>
+										</header>
+										<section>
+											<a class="summary" href="https://www.oschina.net/event/2313175">TensorFlow应用案例征集</a>
+											<div class="box opt-wrapper">
+												<div class="box vertical box-aw sponsor">
+													<img src="https://www.oschina.net/img/portrait.gif" />
+													<span>紫腾</span>
+												</div>
+												<div class="box-fr opt-btn ">立即报名</div>
+											</div>
+										</section>
+										<footer class="box vertical when-where">
+											<label>2020.07.11</label>
+											<label>北京东城</label>
+										</footer>
+									</div>
+								</div>
+								<div class="box2 hide">
+									<div class="lee-item event-item">
+										<header class="item-banner">
+											<a href="https://www.oschina.net/event/2308312">
+												<img src="https://static.oschina.net/uploads/cover/3799215_cRZPN_bi.jpg" />
+											</a>
+										</header>
+										<section>
+											<a class="summary" href="https://www.oschina.net/event/2313175">华为开发者大会2020（Cloud）</a>
+											<div class="box opt-wrapper">
+												<div class="box vertical box-aw sponsor">
+													<img src="https://oscimg.oschina.net/oscnet/up-4x4nfugf22mauznvgjiycsfekebc4xjl!/both/50x50?t=1537714989000" />
+													<span>举个栗子OSC</span>
+												</div>
+												<div class="box-fr opt-btn ">立即报名</div>
+											</div>
+										</section>
+										<footer class="box vertical when-where">
+											<label>2020.02.12</label>
+											<label>广东深圳</label>
+										</footer>
+									</div>
+									
+								</div>
+							</div>
+						</section>
+					</div>
+					<aside class="box-fr aside-content">
+						<header class="top10-title">
+							<span>
+								热门活动
+							</span>
+						</header>
+						<section class="top10">
+							<div class="box vertical hot-event">
+								<div class="box-f1">
+									<a href="https://www.oschina.net/event/2308312">
+										<img class="thumb" src="https://static.oschina.net/uploads/cover/4054879_wtgfH_si.jpg" />
+									</a>
+								</div>
+								<div class="box-aw">
+									<a class="sc text wrap event-name" href="https://www.oschina.net/event/2308312">
+										TensorFlow应用案例征集
+									</a>
+									<div class="box vertical when-where">
+										<label>2019.07.11 &nbsp &nbsp</label>
+										<label>北京东城</label>
+									</div>
+								</div>
+							</div>
+							<div class="box vertical hot-event">
+								<div class="box-f1">
+									<a href="https://www.oschina.net/event/2308312">
+										<img class="thumb" src="https://static.oschina.net/uploads/cover/3799215_cRZPN_si.jpg" />
+									</a>
+								</div>
+								<div class="box-aw">
+									<a class="sc text wrap event-name" href="https://www.oschina.net/event/2308312">
+										华为开发者大会2020(Cloud)
+									</a>
+									<div class="box vertical when-where">
+										<label>2019.02.12 &nbsp &nbsp</label>
+										<label>广东深圳</label>
+									</div>
+								</div>
+							</div>
+							<div class="box vertical hot-event">
+								<div class="box-f1">
+									<a href="https://www.oschina.net/event/2308312">
+										<img class="thumb" src="https://static.oschina.net/uploads/cover/3742918_FflTz_si.png" />
+									</a>
+								</div>
+								<div class="box-aw">
+									<a class="sc text wrap event-name" href="https://www.oschina.net/event/2308312">
+										Apache IoTDB x Apache Pulsar Meetup
+									</a>
+									<div class="box vertical when-where">
+										<label>2019.07.11 &nbsp &nbsp</label>
+										
+										<label>北京海淀</label>
+									</div>
+								</div>
+							</div>
+							<div class="box vertical hot-event">
+								<div class="box-f1">
+									<a href="https://www.oschina.net/event/2308312">
+										<img class="thumb" src="https://static.oschina.net/uploads/cover/4081603_UnmOI_si.jpg" />
+									</a>
+								</div>
+								<div class="box-aw">
+									<a class="sc text wrap event-name" href="https://www.oschina.net/event/2308312">
+										Service Mesh Meetup#9 杭州站：To Infinity and Beyond
+									</a>
+									<div class="box vertical when-where">
+										<label>2019.07.11 &nbsp &nbsp</label>
+										<label>浙江杭州</label>
+									</div>
+								</div>
+							</div>
+							<div class="box vertical hot-event">
+								<div class="box-f1">
+									<a href="https://www.oschina.net/event/2308312">
+										<img class="thumb" src="https://static.oschina.net/uploads/cover/4169309_NLBhC_si.png" />
+									</a>
+								</div>
+								<div class="box-aw">
+									<a class="sc text wrap event-name" href="https://www.oschina.net/event/2308312">
+										走近图数据库：Nebula Graph 2019 嘉年华
+									</a>
+									<div class="box vertical when-where">
+										<label>2019.12.28 &nbsp &nbsp</label>
+										<label>浙江杭州</label>
+									</div>
+								</div>
+							</div>
+						</section>
+						<footer></footer>
+						<div class="section-item business-cooperation">
+							<header class="section-title">
+								<span>商务合作</span>
+							</header>
+							<section class="section-content">
+								<a href="https://my.oschina.net/u/3843409/blog/3004651" target="_blank" title="开源合作" style="display: block;margin-bottom: 15px;">
+									<img src="https://oscimg.oschina.net/oscnet/4334754cd241bd766276dc606b020a702c9.jpg" alt="开源合作"/>
+								</a>
+							</section>
+						</div>
+					</aside>
+				</section>
+				</div>
+				</div>
+				</div>
+
+				</header>
+			</article>
+		</section>
+		<div id="footer">
+			<div class="section2">
+				<div class="view1">
+					<a href="exam2.html">关于我们</a><span>|</span>
+					<a href="#">联系我们</a><span>|</span>
+					<a href="#">在线工具</a><span>|</span>
+					<a href="#">合作伙伴</a>
+				</div>
+				<div class="view2">
+					COPYRIGHT&nbsp;&copy;&nbsp;2019 - 2021&nbsp;南工院&nbsp;移动1811&nbsp;林磊蕊&nbsp;&nbsp;&nbsp;&nbsp;版权所有
+		
+				</div>
+			</div>
+		</div>
 	</body>
+	<script>
+		$(function() {
+			$(".tabs li").click("mouseenter", function() {
+				$(this).css("cursor", "pointer");
+				$(".tabs li").removeClass("selected");
+				$(this).addClass("selected");
+				var nn = parseInt($(this).attr('nn'));
+				$(".panel-text").children().addClass('hide');
+				$(".panel-text").children().eq(nn).removeClass('hide');
+			});
+		});
+	</script>
 </html>

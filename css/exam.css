@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+*, :after, :before{
+	box-sizing: inherit;
+}
 
 /* 导航栏 */
 #header_container{
@@ -23,6 +26,13 @@
 }
 #header_container ul li:hover{
 	color: white;
+}
+#header_container a{
+	color:#E5E5E5;
+	text-decoration: none;
+}
+#header_container a:hover{
+	color:#FFFFFF;
 }
 /*1.头部*/
 #header {
@@ -94,7 +104,8 @@
     border-right: none;
 }
 #nav ul li a {
-	font: 14px;
+	font-weight: 300;
+	font-size: 14px;
     color:black;
     text-decoration: none;
 }
